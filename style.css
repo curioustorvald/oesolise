@@ -246,6 +246,17 @@ textarea {
     font-family: "Noto Sans", sans-serif;
 }
 
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+footer {
+    font-size: 0.9rem;
+    font-family: "Noto Serif KR", serif;
+    line-height: 1.0;
+}
+
 #hangulinput {
     color: #111;
 }
@@ -266,13 +277,13 @@ h4, label {
     font-family: "Noto Serif KR", serif;
 }
 
-@media (min-aspect-ratio: 5/3) and (max-width: 999px) {
+@media (min-aspect-ratio: 15/10) and (max-width: 999px) {
     textarea {
         height: 8rem;
     }
 }
 
-@media (max-aspect-ratio: 3/5) {
+@media (max-aspect-ratio: 10/15) {
     textarea {
         height: 8rem;
     }

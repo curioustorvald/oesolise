@@ -13,18 +13,24 @@
     </div>
     <div style="display:grid; grid-template-colums: auto auto">
       <div style="grid-column:1/span 2">
-        <h4>한글 입력</h4>
+        <h4>한글 넣기</h4>
       </div>
       <textarea id="hangulinput" style="grid-column:1/span 2"></textarea>
-      <h4>풀어쓰기 출력</h4>
+      <h4>풀어쓰기 내놓기</h4>
       <div style="display:flex;justify-content:flex-end;align-items:center;">
         <form>
-          <label for="useorthodoxrule">초성「ㅇ」생략</label>
+          <label for="useorthodoxrule">첫소리「ㅇ」을 적지 않기</label>
           <input id="useorthodoxrule" type="checkbox" checked />
         </form>
       </div>
       <textarea id="oesoloutput" readonly="1" style="grid-column:1/span 2"></textarea>
     </div>
+    <hr />
+    <footer style="text-align:center">
+      <p>Copyright 2022 CuriousTorvald</p>
+      <p>이 무른모는 MIT License에 적힌 대로 널리 쓰일 수 있습니다</p>
+      <p><a href="https://github.com/curioustorvald/oesolise">이 풀그림을 GitHub에서 포&ndash;크하이소!</a></p>
+    </footer>
   </body>
   <script>
     const convert = (event) => { document.getElementById("oesoloutput").value = oesolise(document.getElementById("hangulinput").value, document.getElementById("useorthodoxrule").checked) }
