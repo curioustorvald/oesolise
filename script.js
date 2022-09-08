@@ -1,4 +1,4 @@
-const charmap = {r:'ᴊ',s:'ʟ',e:'c',f:'ƨ',a:'ᴅ',q:'ᵾ',t:'ʌ',d:'o',w:'ʌ̅',c:'ƛ',z:'ᴊ̵',x:'ᴇ',v:'z̵',g:'ô',_:'',k:'h',i:'k',j:'q',u:'εլ',h:'⟂',H:'⟂̌',y:'⫫',n:'ᴛ',N:'ᴛ̌',b:'⫪',m:'ᴜ',M:'ᴜ̌',l:'l',L:'ı'} // Keys: KS X 5002 keyboard layout
+const charmap = {r:'ᴊ',s:'ʟ',e:'c',f:'ƨ',a:'ᴅ',q:'ᵾ',t:'ʌ',d:'o',w:'ʌ̅',c:'ƛ',z:'ᴊ̵',x:'ᴇ',v:'z̵',g:'ō',_:'',k:'h',i:'k',j:'q',u:'εլ',h:'⟂',H:'⟂̌',y:'⫫',n:'ᴛ',N:'ᴛ̌',b:'⫪',m:'ᴜ',M:'ᴜ̌',l:'l',L:'ı'} // Keys: KS X 5002 keyboard layout
 Array.prototype.oesolmap = function() { return this.map(s=>[...s].flatMap(c=>charmap[c]).join('')) }
 
 function oesolise(string, useOrthodoxRule) {
